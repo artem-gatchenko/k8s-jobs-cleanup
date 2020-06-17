@@ -52,7 +52,7 @@ apiVersion: batch/v1beta1
 kind: CronJob
 metadata:
   name: jobs-cleanup
-  namespace: kube-system
+  namespace: default
 spec:
   schedule: "*/1 * * * *"
   jobTemplate:
