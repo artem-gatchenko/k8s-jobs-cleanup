@@ -3,7 +3,7 @@
 If your K8s cluster support alpha features, you can use [TTLAfterFinished](https://kubernetes.io/docs/concepts/workloads/controllers/ttlafterfinished/) option instead this image.
 
 ## Describe
-This is source code from [Docker image](https://hub.docker.com/repository/docker/gatchenko/k8s-jobs-cleanup) which built on **Python 3.7 Alpine** image. The image is designed to run by **CronJob**, to clear Jobs in the status of "**completed**" and their pods.
+This is source code from [Docker image](https://hub.docker.com/r/gatchenko/k8s-jobs-cleanup) which built on **Python 3.7 Alpine** image. The image is designed to run by **CronJob**, to clear Jobs in the status of "**completed**" and their pods.
 
 ## Options
 | Option | Describe | Default value | Required |
