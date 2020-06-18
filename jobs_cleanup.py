@@ -24,7 +24,7 @@ configuration = kubernetes.client.Configuration()
 api_instance = kubernetes.client.BatchV1Api(kubernetes.client.ApiClient(configuration))
 
 
-def kube_cleanup_finished_jobs(namespace='default', state='Finished'):
+def kube_cleanup_finished_jobs(namespace=kubeNamespace, state='Finished'):
     deleteoptions = client.V1DeleteOptions(propagation_policy='Background')
     try: 
         jobs = api_instance.list_namespaced_job(namespace,
